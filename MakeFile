@@ -10,6 +10,14 @@ LINKER_FLAGS := -Wall -m64 -gdwarf-2 -no-pie -z noexecstack
 BIN_NAME: main
 BIN := ./$(BIN_NAME)
 
+menu:
+  	@echo *** Main Menu ***
+  	@echo "make menu	==> This menu"
+	@echo "make build	==> Build this program"
+	@echo "make run		==> Run this program"
+	@echo "make clean	==> Clean this working area"
+	
+	
 run:	build
 	@echo "Running Program!"
 	$(BIN)
